@@ -11,7 +11,7 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
     - What variable(s) are the target(s) for your model?
         - The target for the model is the 'IS_SUCCESSFUL' column.
     - What variable(s) are the features for your model?
-        -- The features of the model include APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, and SPECIAL_CONSIDERATIONS. These features are featured after the unncessary columns of 'EIN' and 'NAME' were removed.
+        - The features of the model include APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT, and SPECIAL_CONSIDERATIONS. These features are featured after the unncessary columns of 'EIN' and 'NAME' were removed.
     - What variable(s) should be removed from the input data because they are neither targets nor features?
         - STATUS and SPECIAL_CONSIDERATIONS should be removed from the data because in the Status column they were the same value - 1 for Status, and SPECIAL_CONSIDERATONS because it is not a numerical data. 
 * Compiling, Training, and Evaluating the Model
@@ -24,5 +24,5 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
         - To increase model performance, I increased the hidden layers and change activation functions from relu to segmoid.
             - Reference: Image 002.png and Image 003.png
 
-* Summary: Based on the overall results of the deep learning model, I was unable to achieve at least a 75% accuracy. I believe if I removed additional columns to the data frame; any columns that are not quanitifiable would take up space. Also, changing the activation functions that could boost accuracy could help achieve at least a 75% accuracy. I don't believe adding additional hidden layers would help as it is more important to determine the number of neurons in the hidden layers versus listing additional hidden layers. Prning a neural network will determine an optimal structure for a neural network.
+* Summary: Based on the overall results of the deep learning model, I was unable to achieve at least a 75% accuracy. I believe I should remove additional columns to the data frame and any columns that are not quanitifiable as they would take up space. Also, by changing the activation functions it could boost accuracy and help achieve at least a 75% accuracy. I don't believe adding additional hidden layers would help as it is more important to determine the number of neurons in the hidden layers versus listing additional hidden layers. Pruning a neural network will determine an optimal structure for a neural network.
 
